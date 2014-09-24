@@ -1,0 +1,95 @@
+<%
+  paginated_products = @searcher.retrieve_products if params.key?(:keywords)
+  paginated_products ||= products
+%>
+
+<% if spree_current_user %>
+    <% if spree_current_user.wholesaler %>
+        <% wholesaler2 = true %>
+    <% end %>
+<% end %>
+<% content_for :head do %>
+  <% if paginated_products.respond_to?(:num_pages) %>
+    <%= rel_next_prev_link_tags paginated_products %>
+  <% end %>
+<% end %>
+
+<% if products.empty? %>
+  <%= Spree.t(:no_products_found) %>
+<% elsif params.key?(:keywords) %>
+  <h6 class="search-results-title"><%= Spree.t(:search_results, :keywords => h(params[:keywords])) %></h6>
+<% end %>
+<% if products.any? %>
+  <% products.each do |product| %>
+
+        <% url = product_url(product, :taxon_id => @taxon.try(:id)) %>
+        <div class="item">
+          <% cache(@taxon.present? ? [current_currency, @taxon, product] : [current_currency, product]) do %>
+              <div class="item_image"><%= link_to small_image(product, :itemprop => "image"), url, :itemprop => 'url' %></div>
+              <%= raw"<div class='sale'><span>-#{100-((product.price_in(current_currency).display_price.to_s.split(' ').first.delete('.').to_f/product.old_price.to_f)*100).to_i}%</span></div>" unless product.old_price.blank? %>
+          <%= link_to truncate(product.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => product.name %>
+          <p><%= product.short_desc %></p>
+          <span class="price minus"><%= display_price(product) %></span>
+          <% end %>
+
+
+
+
+
+          <%= form_for :order, :url => populate_orders_path, html: { :class => 'form_s' }, remote: true do |f| %>
+              <% if product.variants_and_option_values(current_currency).any? and spree_current_user and spree_current_user.wholesaler %>
+
+                  <% product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
+                      <div>
+                        <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s  %>
+
+                        <%# radio_button_tag "products[#{product.id}]", variant.id, index == 0, 'data-price' => variant.price_in(current_currency).display_price %>
+                        <%= variant_options variant %>
+                        <% if variant_price variant %>
+                            <span class="price diff"><%= variant_price variant %></span>
+                        <% end %>
+                      </div>
+                  <% end %>
+              <% else %>
+                  <%= hidden_field_tag "variant_id", product.master.id %>
+              <% end %>
+
+
+
+              <%= hidden_field_tag :quantity, 1 %>
+
+
+
+
+
+
+
+
+              <%= f.submit '', :class => 'cart' %>
+              <!--<a href="#"><div class="cart"></div></a>-->
+          <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </li>
+  <% end %>
+  <% reset_cycle("classes") %>
+<% end %>
+
+<% if @taxon and controller.action_name != 'show_all' and products.count > 8 %>
+<nav class="pagination"><a href="/t_all/<%= @taxon.permalink %>" style="color: #85898f;">показать все</a></nav>
+<% end %>
+<% if paginated_products.respond_to?(:num_pages) %>
+  <%= paginate paginated_products %>
+<% end %>
+

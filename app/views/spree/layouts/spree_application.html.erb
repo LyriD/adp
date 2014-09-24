@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="<%= I18n.locale %>"> <![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 9]><!--><html lang="<%= I18n.locale %>"><!--<![endif]-->
+  <head data-hook="inside_head">
+    <%= render :partial => 'spree/shared/head' %>
+    <style>
+        #gritter-notice-wrapper      {
+            margin-top: 30px;
+        }
+    </style>
+  </head>
+  <body>
+
+
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <nav class="top">
+    <div class="wrapper">
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <% Spree::Page.visible.header_links.each do |link| %>
+            <li><%= link_to link.title, link.slug %></li>
+        <% end %>
+      </ul>
+      <div class="cart">
+        <div class="phone" style="border-bottom: none; font-size: 19px;"><%= Spree::Config[:phone] %></div>
+
+
+        <% unless controller.controller_name == '' %>
+        <a href="/cart"><%= image_tag 'cart_big.png', style: 'margin-bottom: 7px;' %>
+          <% if current_order.nil? %>
+              <p id="cart_ajax">Ваша корзина <strong>пуста</strong></p>
+
+        <% else %>
+              <p id="cart_ajax">В корзине товаров:&nbsp<strong id="cart_count"><%= current_order.line_items.count %></strong> на сумму <strong id="cart_total"><%= current_order.display_total %></strong></p>
+
+        <% end %> </a>
+        <% end %>
+        <% if spree_current_user %>
+            <div class="email"><a href="/logout" style="color: #fff;">&nbsp Выход</a></div>
+
+      <% else %>
+            <div class="email"><a href="/login" style="color: #fff;">&nbsp Вход</a></div>
+
+      <% end %>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="wrapper">
+    <nav class="side">
+      <!--<div class="logo"></div>-->
+      <div class="logo2"><%= link_to image_tag('logo2.png', width: 160), '/' %></div>
+        <%= yield :sidebar %>
+
+    </nav>
+
+
+        <div class="content <%= @body_class %>">
+              <%= yield %>
+        </div>
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <% Spree::Page.visible.footer_links.each do |link| %>
+            <li><%= link_to link.title, link.slug %></li>
+        <% end %>
+      </ul>
+      <div class="social">
+        <ul>
+          <li><a href="http://www.facebook.com/sharer.php?u=adpstore.ru ? &t=<%= request.original_url %>" target="blank"><%= image_tag 'facebook.png' %></a></li>
+          <li><a href="http://vkontakte.ru/share.php?url=<%= request.original_url %>" target="blank"><%= image_tag 'vk.png' %></a></li>
+          <li><a href="http://twitter.com/share?&url=<%= request.original_url %>" target="blank"><%= image_tag 'twitter.png' %></a></li>
+          <li><a href="https://plus.google.com/share?url={URL}" target="blank"><%= image_tag 'gplus.png' %></a></li>
+          <li><a href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st._surl=<%= request.original_url %>" target="blank"><%= image_tag 'odn.png' %></a></li>
+        </ul>
+      </div>
+      <div class="email" style="float: right; margin-right: 10px;"><a href="mailto:<%= Spree::Config[:email] %>" style="color: #fff">Обратная связь: <%= Spree::Config[:email] %></a></div>
+    </div>
+  </footer>
+
+
+    <%= render :partial => 'spree/shared/google_analytics' %>
+    <script>
+      Spree.api_key = <%= raw(try_spree_current_user.try(:spree_api_key).to_s.inspect) %>;
+    </script>
+  </body>
+</html>

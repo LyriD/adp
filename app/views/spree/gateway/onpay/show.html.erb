@@ -1,0 +1,38 @@
+<fieldset id="order_summary" data-hook>
+
+  <div id="order" data-hook>
+    <% if params.has_key? :checkout_complete %>
+        <h1><%= Spree.t(:thank_you_for_your_order) %></h1>
+    <% end %>
+    <%# render :partial => 'spree/shared/order_details', :locals => { :order => @order } %>
+
+    <br class="clear" />
+
+    <%= form_tag @gateway.url, :method => "POST" do %>
+        <%= hidden_field_tag(:"pay_for", @order.id)%>
+        <%= hidden_field_tag(:"pay_mode", @pay_type)%>
+        <%= hidden_field_tag(:"price", @price)%>
+        <%= hidden_field_tag(:"currency", @currency)%>
+        <%= hidden_field_tag(:"convert", @convert_currency)%>
+        <%= hidden_field_tag(:"pay_final", @price_final)%>
+        <%= hidden_field_tag(:"user_email", @user_email)%>
+        <%= hidden_field_tag(:"md5", @md5) unless @md5.nil? %>
+        <h1 class="font-41 black"><%= "Заказ #{@order.number}" %></h1>
+        <%= render :partial => 'spree/shared/order_details', :locals => {:order => @order} %>
+        <div class="clear"></div>
+        <div class="font-41">&nbsp;</div>
+        <button style="margin-left: 350px;" class="button_buy left" href="">
+          <span class="left_b"></span>
+  <span class="line_b">
+    <span class="text_z_1">Перейти к оплате</span>
+  </span>
+          <span class="right_b"></span>
+        </button>
+        <div class="clear"></div>
+    <% end %>
+  </div>
+</fieldset>
+
+
+
+

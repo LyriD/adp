@@ -1,0 +1,23 @@
+
+
+$('#cart_ajax').html('В корзине товаров:&nbsp<strong><%= current_order.line_items.count %></strong> на сумму <strong><%= current_order.display_total %></strong>');
+//$('#cart_count').html('<%#  current_order.line_items.count %>');
+//$('#cart_total').html('<%#  current_order.display_total %>');
+
+
+$.gritter.add({
+    // (string | mandatory) the heading of the notification
+    title: '<%= link_to @variant.name, product_url(@variant.product), style: 'color: white;' %>',
+    // (string | mandatory) the text inside the notification
+    text: 'Добавлен в <%= link_to 'корзину!', cart_path, style: 'color: white;' %>',
+    // (string | optional) the image to display on the left
+    image: '<%=  @variant.product.images.first.mini_url if @variant.images.first  %>',
+    // (bool | optional) if you want it to fade out on its own or just sit there
+    sticky: false,
+    // (int | optional) the time you want it to be alive for before fading out (milliseconds)
+    time: 3000,
+    // (string | optional) the class name you want to apply directly to the notification for custom styling
+    class_name: 'gritter_window_customize'
+    // (function | optional) function called before it opens
+
+});

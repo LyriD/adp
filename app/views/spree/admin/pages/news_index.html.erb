@@ -1,0 +1,29 @@
+<h1>Listing news</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Teaser</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @news.each do |news| %>
+      <tr>
+        <td><%= news.title %></td>
+        <td><%= raw news.teaser %></td>
+        <td><%= link_to 'Show', '/' %></td>
+        <td><%= link_to 'Edit', "/admin/edit_news/#{news.id}" %></td>
+        <td><%= link_to 'Destroy', "/news/#{news.id}", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Добавить новость', '/admin/add_news' %>

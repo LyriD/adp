@@ -1,0 +1,77 @@
+# pack-refs with: peeled 
+21bee1697e3aa3505d953eb7b7c7a5dde90aff5d refs/tags/v4.0.0.alpha.5
+2823863ef11fa4be51294017f5b12125db2bc53e refs/tags/v4.0.0.alpha.4
+d687fed9d6b198cf57cfc5afba3e9e5d9e839828 refs/tags/v4.0.0.alpha.3
+^ab48e6a155897e3724b49ea3dafb129187c4a69a
+c7e555c47ad9c393de41d023efa8d3b664ac5ab6 refs/tags/v4.0.0.alpha.2
+c14a6f06f1af92abce6f76b213c20f5d2cd7f698 refs/tags/v4.0.0.alpha.1
+^d452858db28263423933097da1df63d0083a3813
+d9e49a73d74dbce46b4190389f06d7151c00bd34 refs/tags/v4.0.0
+82dc89371bd29e380ea06211d094ec81613eb60f refs/tags/v3.1.0
+8f2e7b721c4ca40b2bdcf2ec56cc550de3642f76 refs/tags/v3.0.4
+08c982de3dccba8607d8ab6f2456588657ed4c1f refs/tags/v3.0.3
+a22d0b6a0d82ab2a37c555cd63c0c305cbf8fe91 refs/tags/v3.0.2
+54e1c39138ee37d8ee77738913e829d58e901111 refs/tags/v3.0.1
+c976977ce016e618efd676eb67cc9c81503958c1 refs/tags/v3.0.0
+^e6e1215a25135dda32ec31e64a6a95894f286cb1
+7fd5133eeafcc903e32516bc357b235442a3f8d5 refs/tags/v0.3.1
+^9c45ee84f9815e5ffb5e4a69ae6e47ea4521c7db
+6ad0579577dec4a7479fb168de165d2d70630c35 refs/tags/v0.3.0
+^39f7ba6a08b0c19654a2c010e69b37201f2bc49e
+4b850ed678a915446f88fce9fcd61ab1fee8108c refs/tags/v0.2.0.beta8
+^38d332b22d79015019f016d81098a1db27876bfb
+2ed1506eeb185bbd0430c2dbe3d5965cb7b589fd refs/tags/v0.2.0.beta6
+^6938454a8c0bd465c83c8e688a189f9484256ad2
+feb0ad2d2e8cacd60d7356cb33b9ba60be6c8ac8 refs/tags/v0.2.0.beta5
+^d5db8c743fdd93f8bdd84cedac7ff2c7d69b7e45
+a7d0c1ceb7976b9d80a3ac7eabfff4f72b873807 refs/tags/v0.2.0.beta4
+^ea6c37917cfbf2f954deb8dbc1a73e2e3e084e64
+1b2dc1523f9fcd425630e22db2900e691a4e97ce refs/tags/v0.2.0.beta3
+^716693cc1b3e7ef8903b60516531b1df380c2bb2
+d7081fb1a3f3e2e536ed4004ed1507566850509d refs/tags/v0.2.0.beta2
+^e45a8e1d8a8736c8b77f8f3e4d4a4abe30c7082b
+3b34bc93471197c834f439ad53bb16195d8e37b9 refs/tags/v0.2.0.beta1
+^53727257a9772dc87b8322169a012832f6446001
+3acfa8dd914ffe3911af17c5e8b0b25d3f0d3f6d refs/tags/v0.2.0
+^3cef29c34a07862b139561ffc367f3cfbb5c8e89
+d165706afdae5b1b005f254e5ab5ba16d2b20d70 refs/tags/v0.1.0.beta
+^64e792a2bb7715aa9adcd9efa007ea99aa6dd6b7
+6ccde9f8225a756230911b01569343605de0aa96 refs/tags/v0.1.0
+^a5ef3ea369ae43e661f9545b08596d7253c77138
+461c9f86174a11df8eea17c38644f95fe96cef7b refs/tags/v0.0.9
+^453c41a2dfbeb8767c73439af0b1791731d137e5
+570986aedad141ad7c20c0963fbce352c8cb3c02 refs/tags/v0.0.7
+^b597026217d41295cbb37c64a9c3a6fc2dbec20c
+a9653b1c25d061f40f01a09b423cbc5e08183b47 refs/tags/v0.0.5
+^1d5a0841821e243fff09eeb96400dbc19eccdd95
+02521dd110f8af00c4d156ece8c5eb3b73d6db7c refs/tags/v0.0.4
+^ec27552dd922f28da375dc39384968d281c8dbc8
+9aa07bc5b2cf5d10f4630d2a01f8f56d7d99ebe0 refs/tags/v0.0.3
+^8617fac7b51fc21b1e8ea77c468a0ba95fd9de60
+d83d599afc1844d1cdb65a1142881b0a188faaf8 refs/tags/v0.0.2
+^a2d00fee202788ac479833651840f9f36868dc7f
+7ea03fe50ab7f505e7730539b55e4c6e8b4db219 refs/tags/v0.0.10
+^833b68c46c807118ae0d1f98d5f27decb5d077eb
+1fe4ddd528429130b128493c99b76bfac89f1358 refs/tags/v0.0.1
+^acdae46ba9c8f9eddc10e874fcac19f392d66718
+74c6c3fe165d592d47e7653b0666a6bb36b031ae refs/tags/0.2.0.beta7
+^6475f7780c6ffccd715e0f93a98b5e1d0feb2d22
+a570c2617a9c9becb1214036db476ffcc7b79fc8 refs/heads/test_friendly_id_compat_3-0
+fd2640bf24beb72bc5a4c644ee15c0cf2894c8bf refs/heads/test_databases_properly
+a56c29edda1adb8c7a8bb28bf220186d118911d0 refs/heads/remove_translations_reload
+b64ff9c99e509c0e0808ca8ba1a934576a30ace7 refs/heads/refactor_internals
+31d018fddd1496a01077d3ba19e47eb9e56bc986 refs/heads/refactor_instance_methods
+2aaf38d8925cd5ae4e4877433861eadcebfb081b refs/heads/prusswan-fix_first_with_limit
+ca3c62fad2af8c654525f27aa43990df4bf63d18 refs/heads/master
+811680bcd89af2705f68e8d4d27712e865d3ad74 refs/heads/logo
+bdef6824a710983018f4cb67f6247f5301bcc1db refs/heads/issue_250
+8f2e7b721c4ca40b2bdcf2ec56cc550de3642f76 refs/heads/gut_versioning_3-0
+9c45ee84f9815e5ffb5e4a69ae6e47ea4521c7db refs/heads/globalize3
+a54ec843511d02dcad33dfe65872d2262d6d5493 refs/heads/gh-pages
+999e70663ddda66287221ede1c00b2cfbba20e02 refs/heads/fix_squeel_where_not_compat
+497ee8d113f2403bfc5a8f7a7880f4c3ddca4de3 refs/heads/fix_3-0_tests
+655dfa231d7a43c69b64c83fe4f71e4ef2ef775b refs/heads/fallbacks
+f98a350c1462ea846f9a48929249001e3c68d2c4 refs/heads/destroy_all_translations
+794018f8a47bc19359bf47f6e1f3b32ee9efb10a refs/heads/3-1-stable
+a10236b2a1e7b2910320add1e65ab5055dcf44a8 refs/heads/3-1
+145eaa17f4e9f04554c45a596263e73d99dba322 refs/heads/3-0-stable

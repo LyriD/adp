@@ -1,0 +1,29 @@
+<% content_for :sidebar do %>
+  <div data-hook="homepage_sidebar_navigation">
+    <%= render :partial => 'spree/shared/taxonomies' %>
+  </div>
+<% end %>
+
+<div class="fotorama_wrapper" style="margin-top: -42px; margin-bottom: -40px;">
+<div class="fotorama" data-height="893" data-width="893" data-autoplay="4000" data-nav="false">
+  <%= Spree::Page.find_by(:title => 'home').photos.shuffle.each do |image| %>
+    <%= image_tag image.content.url(:show2) %>
+  <% end %>
+</div>
+</div>
+<%# render 'news' %>
+
+<style>
+  .fotorama {
+      margin-top: -40px;
+      margin-bottom: -40px;
+  }
+</style>
+
+
+
+
+
+
+
+

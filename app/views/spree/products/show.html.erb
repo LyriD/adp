@@ -1,0 +1,86 @@
+<% content_for :sidebar do %>
+    <div data-hook="homepage_sidebar_navigation">
+
+          <%= render :partial => 'spree/shared/taxonomies' %>
+    </div>
+<% end %>
+
+<%# cache [current_currency, @product] do %>
+  <div class="inner_item" data-hook="product_show" itemscope itemtype="http://schema.org/Product">
+    <% @body_id = 'product-details' %>
+    <% @body_class = 'inner' %>
+
+    <a onclick="goBack()" class="back">&#8592;Назад</a>
+    <div class="image">
+      <%= render :partial => 'image' %>
+    </div>
+    <div class="social">
+      <ul>
+        <li><a href="http://www.facebook.com/sharer.php?u=<%= @product.name %> ? &t=<%= request.original_url %>" target="blank"><%= image_tag 'facebook.png' %></a></li>
+        <li><a href="http://vkontakte.ru/share.php?url=<%= request.original_url %>" target="blank"><%= image_tag 'vk.png' %></a></li>
+        <li><a href="http://twitter.com/share?&url=<%= request.original_url %>" target="blank"><%= image_tag 'twitter.png' %></a></li>
+        <li><a href="https://plus.google.com/share?url={URL}" target="blank"><%= image_tag 'gplus.png' %></a></li>
+        <li><a href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st._surl=<%= request.original_url %>" target="blank"><%= image_tag 'odn.png' %></a></li>
+        <li><a href="mailto:?Body=<%= request.original_url %>" class="mail">Отправить другу</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+    <div class="description" style="width: 420px;">
+      <h1><%= accurate_title %></h1>
+
+
+
+      <p class="price"><del><%= "#{@product.old_price} руб" unless @product.old_price.blank? %></del><span><%= display_price(@product) %></span> <%= raw"<strong>(-#{100-((@product.price_in(current_currency).display_price.to_s.split(' ').first.delete('.').to_f/@product.old_price.to_f)*100).to_i}%)</strong>" unless @product.old_price.blank? %></p>
+      <article><%= product_description(@product) rescue Spree.t(:product_has_no_description) %></article>
+      <%# render :partial => 'properties' %>
+      <%# render :partial => 'promotions' %>
+      <%# render :partial => 'taxons' %>
+
+      <div style="margin-top: 30px"><%= product_count(@product) %></div>
+
+      <%= render :partial => 'cart_form' %>
+      <br>
+
+
+
+      <% if @product.has_related_products?('colorseries') %>
+          <% if @product.colorseries.first %>
+          <a href="/products/<%= @product.colorseries.first.slug %>" class="list">Такая же модель другого цвета</a>
+          <% end %>
+      <% end %>
+
+
+      <% if @product.has_related_products?('series') %>
+          <% if @product.series.first %>
+              <a href="/series/<%= @product.id %>" class="list">Все аксессуары из этой серии</a>
+          <% end %>
+      <% end %>
+
+      <div class="replies">
+        <h3>Отзывы покупателей</h3>
+
+
+        <% @product.reviews.each do |review| %>
+        <%= render partial: 'spree/shared/review', locals: {review: review} %>
+        <% end %>
+
+        <%= render partial: 'spree/reviews/form', locals: {product: @product, review: Spree::Review.new} %>
+
+
+      </div>
+    </div>
+
+<%# end %>
+
+<script type="text/javascript">
+
+    $("#zoom").elevateZoom({
+        zoomType: "lens",
+        lensShape: "round",
+        lensSize: 260
+//        lensFadeIn: true,
+//        lensFadeOut: true
+    });
+</script>

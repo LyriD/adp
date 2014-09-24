@@ -1,0 +1,79 @@
+<% @body_id = 'cart' %>
+<% @body_class = 'cartview' %>
+<% content_for :sidebar do %>
+    <div data-hook="homepage_sidebar_navigation">
+      <% if "spree/products" == params[:controller] && @taxon %>
+          <%= render :partial => 'spree/shared/filters' %>
+      <% else %>
+          <%= render :partial => 'spree/shared/taxonomies' %>
+      <% end %>
+    </div>
+<% end %>
+
+<!--<div data-hook="cart_container">-->
+  <h1><%= Spree.t(:shopping_cart) %></h1>
+
+
+  <div class="leftside">
+
+  <% if @order.line_items.empty? %>
+
+      <p><%= Spree.t(:your_cart_is_empty) %></p>
+      <p><%= link_to Spree.t(:continue_shopping), products_path, :class => 'button continue' %></p>
+
+  <% else %>
+    <!--<div data-hook="outside_cart_form">-->
+    <%= form_for @order, :url => update_cart_path, :html => {:id => 'update-cart'} do |order_form| %>
+
+        <%= render :partial => 'form', :locals => { :order_form => order_form } %>
+
+
+
+            <% if @order.adjustments.exists? || @order.line_item_adjustments.exists? || @order.shipment_adjustments.exists? %>
+                <p><%= Spree.t(:cart_subtotal, :count => @order.line_items.sum(:quantity)) %>: <%= order_form.object.display_item_total %></p>
+                <%= render "spree/orders/adjustments" %>
+            <% end %>
+            <p>Итого: <%= order_form.object.display_total %></p>
+
+
+
+
+
+
+            <div class="links columns sixteen alpha omega" data-hook="cart_buttons" style="margin-bottom: -37px;">
+        <%= button_tag :class => 'primary offer', :id => 'update-button' do %>
+          <%= Spree.t(:update) %>
+      <% end %>
+        <%= button_tag :class => 'button checkout primary offer', :id => 'checkout-link', :name => 'checkout' do %>
+          <%= Spree.t(:checkout) %>
+      <% end %>
+
+            </div>
+  <% end %>
+  <!--</div>-->
+
+  <div id="empty-cart" data-hook>
+    <%= form_tag empty_cart_path, :method => :put do %>
+      <p id="clear_cart_link" data-hook>
+    <%= submit_tag Spree.t(:empty_cart), :class => 'button gray offer' %>
+    </p>
+  <% end %>
+  </div>
+        <p class="snoska">* Нажимая "Оформить заказ", вы подтверждаете, что прочитали и согласны с условиями <a href="/public_offer">публичной оферты</a>.</p>
+
+
+  <% end %>
+</div>
+
+
+  <div class="rightside">
+    <ul>
+      <li><%= image_tag 'delivery.png' %><a href="#">Доставка по всей России</a></li>
+      <li><%= image_tag 'hanger.png' %><a href="#">Примерка перед покупкой</a></li>
+    </ul>
+  </div>
+
+
+
+
+

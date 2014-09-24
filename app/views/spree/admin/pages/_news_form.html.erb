@@ -1,0 +1,49 @@
+<%# content_for :javascripts do %>
+    <script type="text/javascript" src="/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "textarea",
+            plugins: 'link image code'
+//            remove_script_host : false,
+//            convert_urls : false
+        });
+    </script>
+<%# end %>
+<%= nested_form_for(@news, url: '/news') do |f| %>
+  <% if @news.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@news.errors.count, "error") %> prohibited this news from being saved:</h2>
+
+      <ul>
+      <% @news.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= hidden_field_tag :id, @news.id %>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title, size: '100' %>
+  </div>
+  <div class="field">
+    <%= f.label :teaser %><br>
+    <%= f.text_area :teaser, size: '100x11' %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br>
+    <%= f.text_area :body, size: '100x20' %>
+  </div>
+
+    <div class="field">
+    <%= f.fields_for :products do |task_form| %>
+       <%= task_form.collection_select :id, Spree::Product.all, :id, :name, include_blank: true %>
+
+       <%= task_form.link_to_remove "удалить товар" %>
+    <% end %>
+    <p><%= f.link_to_add "добавить товар", :products %></p>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

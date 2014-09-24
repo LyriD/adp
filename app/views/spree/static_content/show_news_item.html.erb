@@ -1,0 +1,57 @@
+
+
+    <% content_for :sidebar do %>
+        <div data-hook="homepage_sidebar_navigation">
+          <% if "spree/products" == params[:controller] && @taxon %>
+              <%= render :partial => 'spree/shared/filters' %>
+          <% else %>
+              <%= render :partial => 'spree/shared/taxonomies' %>
+          <% end %>
+        </div>
+    <% end %>
+
+    <div data-hook="homepage_products">
+
+      <%# News.all.each do |n| %>
+          <div class="news">
+            <h1><%= @news.title %></h1>
+            <p><%= raw @news.body %></p>
+            <% @news.products.each do |product| %>
+                <% url = product_url(product, :taxon_id => @taxon.try(:id)) %>
+                <div class="item">
+                  <% cache(@taxon.present? ? [current_currency, @taxon, product] : [current_currency, product]) do %>
+                      <div class="item_image"><%= link_to small_image(product, :itemprop => "image"), url, :itemprop => 'url' %></div>
+                      <%= raw"<div class='sale'><span>-#{100-((product.price_in(current_currency).display_price.to_s.split(' ').first.delete('.').to_f/product.old_price.to_f)*100).to_i}%</span></div>" unless product.old_price.blank? %>
+                      <%= link_to truncate(product.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => product.name %>
+                      <p><%= product.short_desc %></p>
+                      <span class="price minus"><%= display_price(product) %></span>
+                  <% end %>
+                  <%= form_for :order, :url => populate_orders_path, html: { :class => 'form_s' } do |f| %>
+                      <% if product.variants_and_option_values(current_currency).any? %>
+                          <% product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
+                              <div>
+                                <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s  %>
+                                <%= variant_options variant %>
+                                <% if variant_price variant %>
+                                    <span class="price diff"><%= variant_price variant %></span>
+                                <% end %>
+                              </div>
+                          <% end %>
+                      <% else %>
+                          <%= hidden_field_tag "variant_id", product.master.id %>
+                      <% end %>
+                      <%= hidden_field_tag :quantity, 1 %>
+                      <%= f.submit '', :class => 'cart' %>
+                      <!--<a href="#"><div class="cart"></div></a>-->
+                  <% end %>
+                </div>
+                </li>
+            <% end %>
+
+          </div>
+      <%# end %>
+
+
+    </div>
+
+

@@ -1,0 +1,63 @@
+<% @body_class = 'cartview' %>
+<h1>Корзина</h1>
+
+  <% if @order.line_items.empty? %>
+
+    <div data-hook="empty_cart">
+      <p><%= Spree.t(:your_cart_is_empty) %></p>
+      <p><%= link_to Spree.t(:continue_shopping), products_path, :class => 'button continue' %></p>
+    </div>
+
+  <% else %>
+    <div data-hook="outside_cart_form">
+      <%= form_for @order, :url => update_cart_path, :html => {:id => 'update-cart'} do |order_form| %>
+
+
+
+        <%= render :partial => 'form', :locals => { :order_form => order_form } %>
+
+
+
+
+          <div class="links columns sixteen alpha omega" data-hook="cart_buttons">
+            <%= button_tag :class => 'primary', :id => 'update-button' do %>
+                <%= Spree.t(:update) %>
+            <% end %>
+            <%= button_tag :class => 'button checkout primary', :id => 'checkout-link', :name => 'checkout' do %>
+                <%= Spree.t(:checkout) %>
+            <% end %>
+          </div>
+
+          <div id="empty-cart" data-hook>
+            <%= form_tag empty_cart_path, :method => :put do %>
+                <p id="clear_cart_link" data-hook>
+                  <%= submit_tag Spree.t(:empty_cart), :class => 'button gray' %>
+                  <%= Spree.t(:or) %>
+                  <%= link_to Spree.t(:continue_shopping), products_path, :class => 'continue button gray' %>
+                </p>
+            <% end %>
+          </div>
+      <% end %>
+
+
+
+
+  </div>
+
+  <% end %>
+
+<div class="leftside">
+
+
+
+  <p>Итого: <strong>1600</strong> руб.</p>
+  <button class="offer">Оформить заказ</button>
+
+  <p class="snoska">* Нажимая "Оформить заказ", вы подтверждаете, что прочитали и согласны с условиями <a href="#">публичной оферты</a>.</p>
+</div>
+<div class="rightside">
+  <ul>
+    <li><img src="img/delivery.png" alt=""><a href="#">Доставка по всей России</a></li>
+    <li><img src="img/hanger.png" alt=""><a href="#">Примерка перед покупкой</a></li>
+  </ul>
+</div>

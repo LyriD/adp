@@ -1,0 +1,2195 @@
+
+---
+spree_countries:
+  columns:
+  - id
+  - iso_name
+  - iso
+  - iso3
+  - name
+  - numcode
+  - states_required
+  records: 
+  - - 1
+    - AFGHANISTAN
+    - AF
+    - AFG
+    - Afghanistan
+    - 4
+    - true
+  - - 2
+    - ALBANIA
+    - AL
+    - ALB
+    - Albania
+    - 8
+    - true
+  - - 3
+    - ALGERIA
+    - DZ
+    - DZA
+    - Algeria
+    - 12
+    - true
+  - - 4
+    - AMERICAN SAMOA
+    - AS
+    - ASM
+    - American Samoa
+    - 16
+    - true
+  - - 5
+    - ANDORRA
+    - AD
+    - AND
+    - Andorra
+    - 20
+    - true
+  - - 6
+    - ANGOLA
+    - AO
+    - AGO
+    - Angola
+    - 24
+    - true
+  - - 7
+    - ANGUILLA
+    - AI
+    - AIA
+    - Anguilla
+    - 660
+    - true
+  - - 8
+    - ANTIGUA AND BARBUDA
+    - AG
+    - ATG
+    - Antigua and Barbuda
+    - 28
+    - true
+  - - 9
+    - ARGENTINA
+    - AR
+    - ARG
+    - Argentina
+    - 32
+    - true
+  - - 10
+    - ARMENIA
+    - AM
+    - ARM
+    - Armenia
+    - 51
+    - true
+  - - 11
+    - ARUBA
+    - AW
+    - ABW
+    - Aruba
+    - 533
+    - true
+  - - 12
+    - AUSTRALIA
+    - AU
+    - AUS
+    - Australia
+    - 36
+    - true
+  - - 13
+    - AUSTRIA
+    - AT
+    - AUT
+    - Austria
+    - 40
+    - true
+  - - 14
+    - AZERBAIJAN
+    - AZ
+    - AZE
+    - Azerbaijan
+    - 31
+    - true
+  - - 15
+    - BAHAMAS
+    - BS
+    - BHS
+    - Bahamas
+    - 44
+    - true
+  - - 16
+    - BAHRAIN
+    - BH
+    - BHR
+    - Bahrain
+    - 48
+    - true
+  - - 17
+    - BANGLADESH
+    - BD
+    - BGD
+    - Bangladesh
+    - 50
+    - true
+  - - 18
+    - BARBADOS
+    - BB
+    - BRB
+    - Barbados
+    - 52
+    - true
+  - - 19
+    - BELARUS
+    - BY
+    - BLR
+    - Belarus
+    - 112
+    - true
+  - - 20
+    - BELGIUM
+    - BE
+    - BEL
+    - Belgium
+    - 56
+    - true
+  - - 21
+    - BELIZE
+    - BZ
+    - BLZ
+    - Belize
+    - 84
+    - true
+  - - 22
+    - BENIN
+    - BJ
+    - BEN
+    - Benin
+    - 204
+    - true
+  - - 23
+    - BERMUDA
+    - BM
+    - BMU
+    - Bermuda
+    - 60
+    - true
+  - - 24
+    - BHUTAN
+    - BT
+    - BTN
+    - Bhutan
+    - 64
+    - true
+  - - 25
+    - BOLIVIA
+    - BO
+    - BOL
+    - Bolivia
+    - 68
+    - true
+  - - 26
+    - BOSNIA AND HERZEGOVINA
+    - BA
+    - BIH
+    - Bosnia and Herzegovina
+    - 70
+    - true
+  - - 27
+    - BOTSWANA
+    - BW
+    - BWA
+    - Botswana
+    - 72
+    - true
+  - - 28
+    - BRAZIL
+    - BR
+    - BRA
+    - Brazil
+    - 76
+    - true
+  - - 29
+    - BRUNEI DARUSSALAM
+    - BN
+    - BRN
+    - Brunei Darussalam
+    - 96
+    - true
+  - - 30
+    - BULGARIA
+    - BG
+    - BGR
+    - Bulgaria
+    - 100
+    - true
+  - - 31
+    - BURKINA FASO
+    - BF
+    - BFA
+    - Burkina Faso
+    - 854
+    - true
+  - - 32
+    - BURUNDI
+    - BI
+    - BDI
+    - Burundi
+    - 108
+    - true
+  - - 33
+    - CAMBODIA
+    - KH
+    - KHM
+    - Cambodia
+    - 116
+    - true
+  - - 34
+    - CAMEROON
+    - CM
+    - CMR
+    - Cameroon
+    - 120
+    - true
+  - - 35
+    - CANADA
+    - CA
+    - CAN
+    - Canada
+    - 124
+    - true
+  - - 36
+    - CAPE VERDE
+    - CV
+    - CPV
+    - Cape Verde
+    - 132
+    - true
+  - - 37
+    - CAYMAN ISLANDS
+    - KY
+    - CYM
+    - Cayman Islands
+    - 136
+    - true
+  - - 38
+    - CENTRAL AFRICAN REPUBLIC
+    - CF
+    - CAF
+    - Central African Republic
+    - 140
+    - true
+  - - 39
+    - CHAD
+    - TD
+    - TCD
+    - Chad
+    - 148
+    - true
+  - - 40
+    - CHILE
+    - CL
+    - CHL
+    - Chile
+    - 152
+    - true
+  - - 41
+    - CHINA
+    - CN
+    - CHN
+    - China
+    - 156
+    - true
+  - - 42
+    - COLOMBIA
+    - CO
+    - COL
+    - Colombia
+    - 170
+    - true
+  - - 43
+    - COMOROS
+    - KM
+    - COM
+    - Comoros
+    - 174
+    - true
+  - - 44
+    - CONGO
+    - CG
+    - COG
+    - Congo
+    - 178
+    - true
+  - - 45
+    - CONGO, THE DEMOCRATIC REPUBLIC OF THE
+    - CD
+    - COD
+    - Congo, the Democratic Republic of the
+    - 180
+    - true
+  - - 46
+    - COOK ISLANDS
+    - CK
+    - COK
+    - Cook Islands
+    - 184
+    - true
+  - - 47
+    - COSTA RICA
+    - CR
+    - CRI
+    - Costa Rica
+    - 188
+    - true
+  - - 48
+    - COTE D'IVOIRE
+    - CI
+    - CIV
+    - Cote D'Ivoire
+    - 384
+    - true
+  - - 49
+    - CROATIA
+    - HR
+    - HRV
+    - Croatia
+    - 191
+    - true
+  - - 50
+    - CUBA
+    - CU
+    - CUB
+    - Cuba
+    - 192
+    - true
+  - - 51
+    - CYPRUS
+    - CY
+    - CYP
+    - Cyprus
+    - 196
+    - true
+  - - 52
+    - CZECH REPUBLIC
+    - CZ
+    - CZE
+    - Czech Republic
+    - 203
+    - true
+  - - 53
+    - DENMARK
+    - DK
+    - DNK
+    - Denmark
+    - 208
+    - true
+  - - 54
+    - DJIBOUTI
+    - DJ
+    - DJI
+    - Djibouti
+    - 262
+    - true
+  - - 55
+    - DOMINICA
+    - DM
+    - DMA
+    - Dominica
+    - 212
+    - true
+  - - 56
+    - DOMINICAN REPUBLIC
+    - DO
+    - DOM
+    - Dominican Republic
+    - 214
+    - true
+  - - 57
+    - ECUADOR
+    - EC
+    - ECU
+    - Ecuador
+    - 218
+    - true
+  - - 58
+    - EGYPT
+    - EG
+    - EGY
+    - Egypt
+    - 818
+    - true
+  - - 59
+    - EL SALVADOR
+    - SV
+    - SLV
+    - El Salvador
+    - 222
+    - true
+  - - 60
+    - EQUATORIAL GUINEA
+    - GQ
+    - GNQ
+    - Equatorial Guinea
+    - 226
+    - true
+  - - 61
+    - ERITREA
+    - ER
+    - ERI
+    - Eritrea
+    - 232
+    - true
+  - - 62
+    - ESTONIA
+    - EE
+    - EST
+    - Estonia
+    - 233
+    - true
+  - - 63
+    - ETHIOPIA
+    - ET
+    - ETH
+    - Ethiopia
+    - 231
+    - true
+  - - 64
+    - FALKLAND ISLANDS (MALVINAS)
+    - FK
+    - FLK
+    - Falkland Islands (Malvinas)
+    - 238
+    - true
+  - - 65
+    - FAROE ISLANDS
+    - FO
+    - FRO
+    - Faroe Islands
+    - 234
+    - true
+  - - 66
+    - FIJI
+    - FJ
+    - FJI
+    - Fiji
+    - 242
+    - true
+  - - 67
+    - FINLAND
+    - FI
+    - FIN
+    - Finland
+    - 246
+    - true
+  - - 68
+    - FRANCE
+    - FR
+    - FRA
+    - France
+    - 250
+    - true
+  - - 69
+    - FRENCH GUIANA
+    - GF
+    - GUF
+    - French Guiana
+    - 254
+    - true
+  - - 70
+    - FRENCH POLYNESIA
+    - PF
+    - PYF
+    - French Polynesia
+    - 258
+    - true
+  - - 71
+    - GABON
+    - GA
+    - GAB
+    - Gabon
+    - 266
+    - true
+  - - 72
+    - GAMBIA
+    - GM
+    - GMB
+    - Gambia
+    - 270
+    - true
+  - - 73
+    - GEORGIA
+    - GE
+    - GEO
+    - Georgia
+    - 268
+    - true
+  - - 74
+    - GERMANY
+    - DE
+    - DEU
+    - Germany
+    - 276
+    - true
+  - - 75
+    - GHANA
+    - GH
+    - GHA
+    - Ghana
+    - 288
+    - true
+  - - 76
+    - GIBRALTAR
+    - GI
+    - GIB
+    - Gibraltar
+    - 292
+    - true
+  - - 77
+    - GREECE
+    - GR
+    - GRC
+    - Greece
+    - 300
+    - true
+  - - 78
+    - GREENLAND
+    - GL
+    - GRL
+    - Greenland
+    - 304
+    - true
+  - - 79
+    - GRENADA
+    - GD
+    - GRD
+    - Grenada
+    - 308
+    - true
+  - - 80
+    - GUADELOUPE
+    - GP
+    - GLP
+    - Guadeloupe
+    - 312
+    - true
+  - - 81
+    - GUAM
+    - GU
+    - GUM
+    - Guam
+    - 316
+    - true
+  - - 82
+    - GUATEMALA
+    - GT
+    - GTM
+    - Guatemala
+    - 320
+    - true
+  - - 83
+    - GUINEA
+    - GN
+    - GIN
+    - Guinea
+    - 324
+    - true
+  - - 84
+    - GUINEA-BISSAU
+    - GW
+    - GNB
+    - Guinea-Bissau
+    - 624
+    - true
+  - - 85
+    - GUYANA
+    - GY
+    - GUY
+    - Guyana
+    - 328
+    - true
+  - - 86
+    - HAITI
+    - HT
+    - HTI
+    - Haiti
+    - 332
+    - true
+  - - 87
+    - HOLY SEE (VATICAN CITY STATE)
+    - VA
+    - VAT
+    - Holy See (Vatican City State)
+    - 336
+    - true
+  - - 88
+    - HONDURAS
+    - HN
+    - HND
+    - Honduras
+    - 340
+    - true
+  - - 89
+    - HONG KONG
+    - HK
+    - HKG
+    - Hong Kong
+    - 344
+    - true
+  - - 90
+    - HUNGARY
+    - HU
+    - HUN
+    - Hungary
+    - 348
+    - true
+  - - 91
+    - ICELAND
+    - IS
+    - ISL
+    - Iceland
+    - 352
+    - true
+  - - 92
+    - INDIA
+    - IN
+    - IND
+    - India
+    - 356
+    - true
+  - - 93
+    - INDONESIA
+    - ID
+    - IDN
+    - Indonesia
+    - 360
+    - true
+  - - 94
+    - IRAN, ISLAMIC REPUBLIC OF
+    - IR
+    - IRN
+    - Iran, Islamic Republic of
+    - 364
+    - true
+  - - 95
+    - IRAQ
+    - IQ
+    - IRQ
+    - Iraq
+    - 368
+    - true
+  - - 96
+    - IRELAND
+    - IE
+    - IRL
+    - Ireland
+    - 372
+    - true
+  - - 97
+    - ISRAEL
+    - IL
+    - ISR
+    - Israel
+    - 376
+    - true
+  - - 98
+    - ITALY
+    - IT
+    - ITA
+    - Italy
+    - 380
+    - true
+  - - 99
+    - JAMAICA
+    - JM
+    - JAM
+    - Jamaica
+    - 388
+    - true
+  - - 100
+    - JAPAN
+    - JP
+    - JPN
+    - Japan
+    - 392
+    - true
+  - - 101
+    - JORDAN
+    - JO
+    - JOR
+    - Jordan
+    - 400
+    - true
+  - - 102
+    - KAZAKHSTAN
+    - KZ
+    - KAZ
+    - Kazakhstan
+    - 398
+    - true
+  - - 103
+    - KENYA
+    - KE
+    - KEN
+    - Kenya
+    - 404
+    - true
+  - - 104
+    - KIRIBATI
+    - KI
+    - KIR
+    - Kiribati
+    - 296
+    - true
+  - - 105
+    - KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF
+    - KP
+    - PRK
+    - North Korea
+    - 408
+    - true
+  - - 106
+    - KOREA, REPUBLIC OF
+    - KR
+    - KOR
+    - South Korea
+    - 410
+    - true
+  - - 107
+    - KUWAIT
+    - KW
+    - KWT
+    - Kuwait
+    - 414
+    - true
+  - - 108
+    - KYRGYZSTAN
+    - KG
+    - KGZ
+    - Kyrgyzstan
+    - 417
+    - true
+  - - 109
+    - LAO PEOPLE'S DEMOCRATIC REPUBLIC
+    - LA
+    - LAO
+    - Lao People's Democratic Republic
+    - 418
+    - true
+  - - 110
+    - LATVIA
+    - LV
+    - LVA
+    - Latvia
+    - 428
+    - true
+  - - 111
+    - LEBANON
+    - LB
+    - LBN
+    - Lebanon
+    - 422
+    - true
+  - - 112
+    - LESOTHO
+    - LS
+    - LSO
+    - Lesotho
+    - 426
+    - true
+  - - 113
+    - LIBERIA
+    - LR
+    - LBR
+    - Liberia
+    - 430
+    - true
+  - - 114
+    - LIBYAN ARAB JAMAHIRIYA
+    - LY
+    - LBY
+    - Libyan Arab Jamahiriya
+    - 434
+    - true
+  - - 115
+    - LIECHTENSTEIN
+    - LI
+    - LIE
+    - Liechtenstein
+    - 438
+    - true
+  - - 116
+    - LITHUANIA
+    - LT
+    - LTU
+    - Lithuania
+    - 440
+    - true
+  - - 117
+    - LUXEMBOURG
+    - LU
+    - LUX
+    - Luxembourg
+    - 442
+    - true
+  - - 118
+    - MACAO
+    - MO
+    - MAC
+    - Macao
+    - 446
+    - true
+  - - 119
+    - MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF
+    - MK
+    - MKD
+    - Macedonia
+    - 807
+    - true
+  - - 120
+    - MADAGASCAR
+    - MG
+    - MDG
+    - Madagascar
+    - 450
+    - true
+  - - 121
+    - MALAWI
+    - MW
+    - MWI
+    - Malawi
+    - 454
+    - true
+  - - 122
+    - MALAYSIA
+    - MY
+    - MYS
+    - Malaysia
+    - 458
+    - true
+  - - 123
+    - MALDIVES
+    - MV
+    - MDV
+    - Maldives
+    - 462
+    - true
+  - - 124
+    - MALI
+    - ML
+    - MLI
+    - Mali
+    - 466
+    - true
+  - - 125
+    - MALTA
+    - MT
+    - MLT
+    - Malta
+    - 470
+    - true
+  - - 126
+    - MARSHALL ISLANDS
+    - MH
+    - MHL
+    - Marshall Islands
+    - 584
+    - true
+  - - 127
+    - MARTINIQUE
+    - MQ
+    - MTQ
+    - Martinique
+    - 474
+    - true
+  - - 128
+    - MAURITANIA
+    - MR
+    - MRT
+    - Mauritania
+    - 478
+    - true
+  - - 129
+    - MAURITIUS
+    - MU
+    - MUS
+    - Mauritius
+    - 480
+    - true
+  - - 130
+    - MEXICO
+    - MX
+    - MEX
+    - Mexico
+    - 484
+    - true
+  - - 131
+    - MICRONESIA, FEDERATED STATES OF
+    - FM
+    - FSM
+    - Micronesia, Federated States of
+    - 583
+    - true
+  - - 132
+    - MOLDOVA, REPUBLIC OF
+    - MD
+    - MDA
+    - Moldova, Republic of
+    - 498
+    - true
+  - - 133
+    - MONACO
+    - MC
+    - MCO
+    - Monaco
+    - 492
+    - true
+  - - 134
+    - MONGOLIA
+    - MN
+    - MNG
+    - Mongolia
+    - 496
+    - true
+  - - 135
+    - MONTSERRAT
+    - MS
+    - MSR
+    - Montserrat
+    - 500
+    - true
+  - - 136
+    - MOROCCO
+    - MA
+    - MAR
+    - Morocco
+    - 504
+    - true
+  - - 137
+    - MOZAMBIQUE
+    - MZ
+    - MOZ
+    - Mozambique
+    - 508
+    - true
+  - - 138
+    - MYANMAR
+    - MM
+    - MMR
+    - Myanmar
+    - 104
+    - true
+  - - 139
+    - NAMIBIA
+    - NA
+    - NAM
+    - Namibia
+    - 516
+    - true
+  - - 140
+    - NAURU
+    - NR
+    - NRU
+    - Nauru
+    - 520
+    - true
+  - - 141
+    - NEPAL
+    - NP
+    - NPL
+    - Nepal
+    - 524
+    - true
+  - - 142
+    - NETHERLANDS
+    - NL
+    - NLD
+    - Netherlands
+    - 528
+    - true
+  - - 143
+    - NETHERLANDS ANTILLES
+    - AN
+    - ANT
+    - Netherlands Antilles
+    - 530
+    - true
+  - - 144
+    - NEW CALEDONIA
+    - NC
+    - NCL
+    - New Caledonia
+    - 540
+    - true
+  - - 145
+    - NEW ZEALAND
+    - NZ
+    - NZL
+    - New Zealand
+    - 554
+    - true
+  - - 146
+    - NICARAGUA
+    - NI
+    - NIC
+    - Nicaragua
+    - 558
+    - true
+  - - 147
+    - NIGER
+    - NE
+    - NER
+    - Niger
+    - 562
+    - true
+  - - 148
+    - NIGERIA
+    - NG
+    - NGA
+    - Nigeria
+    - 566
+    - true
+  - - 149
+    - NIUE
+    - NU
+    - NIU
+    - Niue
+    - 570
+    - true
+  - - 150
+    - NORFOLK ISLAND
+    - NF
+    - NFK
+    - Norfolk Island
+    - 574
+    - true
+  - - 151
+    - NORTHERN MARIANA ISLANDS
+    - MP
+    - MNP
+    - Northern Mariana Islands
+    - 580
+    - true
+  - - 152
+    - NORWAY
+    - 'NO'
+    - NOR
+    - Norway
+    - 578
+    - true
+  - - 153
+    - OMAN
+    - OM
+    - OMN
+    - Oman
+    - 512
+    - true
+  - - 154
+    - PAKISTAN
+    - PK
+    - PAK
+    - Pakistan
+    - 586
+    - true
+  - - 155
+    - PALAU
+    - PW
+    - PLW
+    - Palau
+    - 585
+    - true
+  - - 156
+    - PANAMA
+    - PA
+    - PAN
+    - Panama
+    - 591
+    - true
+  - - 157
+    - PAPUA NEW GUINEA
+    - PG
+    - PNG
+    - Papua New Guinea
+    - 598
+    - true
+  - - 158
+    - PARAGUAY
+    - PY
+    - PRY
+    - Paraguay
+    - 600
+    - true
+  - - 159
+    - PERU
+    - PE
+    - PER
+    - Peru
+    - 604
+    - true
+  - - 160
+    - PHILIPPINES
+    - PH
+    - PHL
+    - Philippines
+    - 608
+    - true
+  - - 161
+    - PITCAIRN
+    - PN
+    - PCN
+    - Pitcairn
+    - 612
+    - true
+  - - 162
+    - POLAND
+    - PL
+    - POL
+    - Poland
+    - 616
+    - true
+  - - 163
+    - PORTUGAL
+    - PT
+    - PRT
+    - Portugal
+    - 620
+    - true
+  - - 164
+    - PUERTO RICO
+    - PR
+    - PRI
+    - Puerto Rico
+    - 630
+    - true
+  - - 165
+    - QATAR
+    - QA
+    - QAT
+    - Qatar
+    - 634
+    - true
+  - - 166
+    - REUNION
+    - RE
+    - REU
+    - Reunion
+    - 638
+    - true
+  - - 167
+    - ROMANIA
+    - RO
+    - ROM
+    - Romania
+    - 642
+    - true
+  - - 168
+    - RUSSIAN FEDERATION
+    - RU
+    - RUS
+    - Российская Федерация
+    - 643
+    - true
+  - - 169
+    - RWANDA
+    - RW
+    - RWA
+    - Rwanda
+    - 646
+    - true
+  - - 170
+    - SAINT HELENA
+    - SH
+    - SHN
+    - Saint Helena
+    - 654
+    - true
+  - - 171
+    - SAINT KITTS AND NEVIS
+    - KN
+    - KNA
+    - Saint Kitts and Nevis
+    - 659
+    - true
+  - - 172
+    - SAINT LUCIA
+    - LC
+    - LCA
+    - Saint Lucia
+    - 662
+    - true
+  - - 173
+    - SAINT PIERRE AND MIQUELON
+    - PM
+    - SPM
+    - Saint Pierre and Miquelon
+    - 666
+    - true
+  - - 174
+    - SAINT VINCENT AND THE GRENADINES
+    - VC
+    - VCT
+    - Saint Vincent and the Grenadines
+    - 670
+    - true
+  - - 175
+    - SAMOA
+    - WS
+    - WSM
+    - Samoa
+    - 882
+    - true
+  - - 176
+    - SAN MARINO
+    - SM
+    - SMR
+    - San Marino
+    - 674
+    - true
+  - - 177
+    - SAO TOME AND PRINCIPE
+    - ST
+    - STP
+    - Sao Tome and Principe
+    - 678
+    - true
+  - - 178
+    - SAUDI ARABIA
+    - SA
+    - SAU
+    - Saudi Arabia
+    - 682
+    - true
+  - - 179
+    - SENEGAL
+    - SN
+    - SEN
+    - Senegal
+    - 686
+    - true
+  - - 180
+    - SEYCHELLES
+    - SC
+    - SYC
+    - Seychelles
+    - 690
+    - true
+  - - 181
+    - SIERRA LEONE
+    - SL
+    - SLE
+    - Sierra Leone
+    - 694
+    - true
+  - - 182
+    - SINGAPORE
+    - SG
+    - SGP
+    - Singapore
+    - 702
+    - true
+  - - 183
+    - SLOVAKIA
+    - SK
+    - SVK
+    - Slovakia
+    - 703
+    - true
+  - - 184
+    - SLOVENIA
+    - SI
+    - SVN
+    - Slovenia
+    - 705
+    - true
+  - - 185
+    - SOLOMON ISLANDS
+    - SB
+    - SLB
+    - Solomon Islands
+    - 90
+    - true
+  - - 186
+    - SOMALIA
+    - SO
+    - SOM
+    - Somalia
+    - 706
+    - true
+  - - 187
+    - SOUTH AFRICA
+    - ZA
+    - ZAF
+    - South Africa
+    - 710
+    - true
+  - - 188
+    - SPAIN
+    - ES
+    - ESP
+    - Spain
+    - 724
+    - true
+  - - 189
+    - SRI LANKA
+    - LK
+    - LKA
+    - Sri Lanka
+    - 144
+    - true
+  - - 190
+    - SUDAN
+    - SD
+    - SDN
+    - Sudan
+    - 736
+    - true
+  - - 191
+    - SURINAME
+    - SR
+    - SUR
+    - Suriname
+    - 740
+    - true
+  - - 192
+    - SVALBARD AND JAN MAYEN
+    - SJ
+    - SJM
+    - Svalbard and Jan Mayen
+    - 744
+    - true
+  - - 193
+    - SWAZILAND
+    - SZ
+    - SWZ
+    - Swaziland
+    - 748
+    - true
+  - - 194
+    - SWEDEN
+    - SE
+    - SWE
+    - Sweden
+    - 752
+    - true
+  - - 195
+    - SWITZERLAND
+    - CH
+    - CHE
+    - Switzerland
+    - 756
+    - true
+  - - 196
+    - SYRIAN ARAB REPUBLIC
+    - SY
+    - SYR
+    - Syrian Arab Republic
+    - 760
+    - true
+  - - 197
+    - TAIWAN, PROVINCE OF CHINA
+    - TW
+    - TWN
+    - Taiwan
+    - 158
+    - true
+  - - 198
+    - TAJIKISTAN
+    - TJ
+    - TJK
+    - Tajikistan
+    - 762
+    - true
+  - - 199
+    - TANZANIA, UNITED REPUBLIC OF
+    - TZ
+    - TZA
+    - Tanzania, United Republic of
+    - 834
+    - true
+  - - 200
+    - THAILAND
+    - TH
+    - THA
+    - Thailand
+    - 764
+    - true
+  - - 201
+    - TOGO
+    - TG
+    - TGO
+    - Togo
+    - 768
+    - true
+  - - 202
+    - TOKELAU
+    - TK
+    - TKL
+    - Tokelau
+    - 772
+    - true
+  - - 203
+    - TONGA
+    - TO
+    - TON
+    - Tonga
+    - 776
+    - true
+  - - 204
+    - TRINIDAD AND TOBAGO
+    - TT
+    - TTO
+    - Trinidad and Tobago
+    - 780
+    - true
+  - - 205
+    - TUNISIA
+    - TN
+    - TUN
+    - Tunisia
+    - 788
+    - true
+  - - 206
+    - TURKEY
+    - TR
+    - TUR
+    - Turkey
+    - 792
+    - true
+  - - 207
+    - TURKMENISTAN
+    - TM
+    - TKM
+    - Turkmenistan
+    - 795
+    - true
+  - - 208
+    - TURKS AND CAICOS ISLANDS
+    - TC
+    - TCA
+    - Turks and Caicos Islands
+    - 796
+    - true
+  - - 209
+    - TUVALU
+    - TV
+    - TUV
+    - Tuvalu
+    - 798
+    - true
+  - - 210
+    - UGANDA
+    - UG
+    - UGA
+    - Uganda
+    - 800
+    - true
+  - - 211
+    - UKRAINE
+    - UA
+    - UKR
+    - Ukraine
+    - 804
+    - true
+  - - 212
+    - UNITED ARAB EMIRATES
+    - AE
+    - ARE
+    - United Arab Emirates
+    - 784
+    - true
+  - - 213
+    - UNITED KINGDOM
+    - GB
+    - GBR
+    - United Kingdom
+    - 826
+    - true
+  - - 214
+    - UNITED STATES
+    - US
+    - USA
+    - United States
+    - 840
+    - true
+  - - 215
+    - URUGUAY
+    - UY
+    - URY
+    - Uruguay
+    - 858
+    - true
+  - - 216
+    - UZBEKISTAN
+    - UZ
+    - UZB
+    - Uzbekistan
+    - 860
+    - true
+  - - 217
+    - VANUATU
+    - VU
+    - VUT
+    - Vanuatu
+    - 548
+    - true
+  - - 218
+    - VENEZUELA
+    - VE
+    - VEN
+    - Venezuela
+    - 862
+    - true
+  - - 219
+    - VIET NAM
+    - VN
+    - VNM
+    - Viet Nam
+    - 704
+    - true
+  - - 220
+    - VIRGIN ISLANDS, BRITISH
+    - VG
+    - VGB
+    - Virgin Islands, British
+    - 92
+    - true
+  - - 221
+    - VIRGIN ISLANDS, U.S.
+    - VI
+    - VIR
+    - Virgin Islands, U.S.
+    - 850
+    - true
+  - - 222
+    - WALLIS AND FUTUNA
+    - WF
+    - WLF
+    - Wallis and Futuna
+    - 876
+    - true
+  - - 223
+    - WESTERN SAHARA
+    - EH
+    - ESH
+    - Western Sahara
+    - 732
+    - true
+  - - 224
+    - YEMEN
+    - YE
+    - YEM
+    - Yemen
+    - 887
+    - true
+  - - 225
+    - ZAMBIA
+    - ZM
+    - ZMB
+    - Zambia
+    - 894
+    - true
+  - - 226
+    - ZIMBABWE
+    - ZW
+    - ZWE
+    - Zimbabwe
+    - 716
+    - true
+  - - 998
+    - 
+    - RS
+    - SRB
+    - Serbia
+    - 999
+    - true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+spree_states:
+  columns:
+  - id
+  - name
+  - abbr
+  - country_id
+  records: 
+  - - 1
+    - Республика Адыгея
+    - RU-AD
+    - 168
+  - - 2
+    - Республика Башкортостан
+    - RU-BA
+    - 168
+  - - 3
+    - Республика Бурятия
+    - RU-BU
+    - 168
+  - - 4
+    - Республика Алтай
+    - RU-AL
+    - 168
+  - - 5
+    - Республика Дагестан
+    - RU-DA
+    - 168
+  - - 6
+    - Республика Ингушетия
+    - RU-IN
+    - 168
+  - - 7
+    - Кабардино-Балкарская республика
+    - RU-KB
+    - 168
+  - - 8
+    - Республика Калмыкия
+    - RU-KL
+    - 168
+  - - 9
+    - Карачаево-Черкесская республика
+    - RU-KC
+    - 168
+  - - 10
+    - Республика Карелия
+    - RU-KR
+    - 168
+  - - 11
+    - Республика Коми
+    - RU-KO
+    - 168
+  - - 12
+    - Республика Марий Эл
+    - RU-ME
+    - 168
+  - - 13
+    - Республика Мордовия
+    - RU-MO
+    - 168
+  - - 14
+    - Республика Саха (Якутия)
+    - RU-SA
+    - 168
+  - - 15
+    - Республика Северная Осетия — Алания
+    - RU-SE
+    - 168
+  - - 16
+    - Республика Татарстан
+    - RU-TA
+    - 168
+  - - 17
+    - Республика Тыва
+    - RU-TY
+    - 168
+  - - 18
+    - Удмуртская республика
+    - RU-UD
+    - 168
+  - - 19
+    - Республика Хакасия
+    - RU-KK
+    - 168
+  - - 20
+    - Чеченская республика
+    - RU-CE
+    - 168
+  - - 21
+    - Чувашская республика
+    - RU-CU
+    - 168
+  - - 22
+    - Алтайский край
+    - RU-ALT
+    - 168
+  - - 23
+    - Краснодарский край
+    - RU-KDA
+    - 168
+  - - 24
+    - Красноярский край
+    - RU-KIA
+    - 168
+  - - 25
+    - Приморский край
+    - RU-PRI
+    - 168
+  - - 26
+    - Ставропольский край
+    - RU-STA
+    - 168
+  - - 27
+    - Хабаровский край
+    - RU-KHA
+    - 168
+  - - 28
+    - Амурская область
+    - RU-AMU
+    - 168
+  - - 29
+    - Архангельская область
+    - RU-ARK
+    - 168
+  - - 30
+    - Астраханская область
+    - RU-AST
+    - 168
+  - - 31
+    - Белгородская область
+    - RU-BEL
+    - 168
+  - - 32
+    - Брянская область
+    - RU-BRY
+    - 168
+  - - 33
+    - Владимирская область
+    - RU-VLA
+    - 168
+  - - 34
+    - Волгоградская область
+    - RU-VGG
+    - 168
+  - - 35
+    - Вологодская область
+    - RU-VLG
+    - 168
+  - - 36
+    - Воронежская область
+    - RU-VOR
+    - 168
+  - - 37
+    - Ивановская область
+    - RU-IVA
+    - 168
+  - - 38
+    - Иркутская область
+    - RU-IRK
+    - 168
+  - - 39
+    - Калининградская область
+    - RU-KGD
+    - 168
+  - - 40
+    - Калужская область
+    - RU-KLU
+    - 168
+  - - 41
+    - Камчатский край
+    - RU-KAM
+    - 168
+  - - 42
+    - Кемеровская область
+    - RU-KEM
+    - 168
+  - - 43
+    - Кировская область
+    - RU-KIR
+    - 168
+  - - 44
+    - Костромская область
+    - RU-KOS
+    - 168
+  - - 45
+    - Курганская область
+    - RU-KGN
+    - 168
+  - - 46
+    - Курская область
+    - RU-KRS
+    - 168
+  - - 47
+    - Ленинградская область
+    - RU-LEN
+    - 168
+  - - 48
+    - Липецкая область
+    - RU-LIP
+    - 168
+  - - 49
+    - Магаданская область
+    - RU-MAG
+    - 168
+  - - 50
+    - Московская область
+    - RU-MOS
+    - 168
+  - - 51
+    - Мурманская область
+    - RU-MUR
+    - 168
+  - - 52
+    - Нижегородская область
+    - RU-NIZ
+    - 168
+  - - 53
+    - Новгородская область
+    - RU-NGR
+    - 168
+  - - 54
+    - Новосибирская область
+    - RU-NVS
+    - 168
+  - - 55
+    - Омская область
+    - RU-OMS
+    - 168
+  - - 56
+    - Оренбургская область
+    - RU-ORE
+    - 168
+  - - 57
+    - Орловская область
+    - RU-ORL
+    - 168
+  - - 58
+    - Пензенская область
+    - RU-PNZ
+    - 168
+  - - 59
+    - Пермский край
+    - RU-PER
+    - 168
+  - - 60
+    - Псковская область
+    - RU-PSK
+    - 168
+  - - 61
+    - Ростовская область
+    - RU-ROS
+    - 168
+  - - 62
+    - Рязанская область
+    - RU-RYA
+    - 168
+  - - 63
+    - Самарская область
+    - RU-SAM
+    - 168
+  - - 64
+    - Саратовская область
+    - RU-SAR
+    - 168
+  - - 65
+    - Сахалинская область
+    - RU-SAK
+    - 168
+  - - 66
+    - Свердловская область
+    - RU-SVE
+    - 168
+  - - 67
+    - Смоленская область
+    - RU-SMO
+    - 168
+  - - 68
+    - Тамбовская область
+    - RU-TAM
+    - 168
+  - - 69
+    - Тверская область
+    - RU-TVE
+    - 168
+  - - 70
+    - Томская область
+    - RU-TOM
+    - 168
+  - - 71
+    - Тульская область
+    - RU-TUL
+    - 168
+  - - 72
+    - Тюменская область
+    - RU-TYU
+    - 168
+  - - 73
+    - Ульяновская область
+    - RU-ULY
+    - 168
+  - - 74
+    - Челябинская область
+    - RU-CHE
+    - 168
+  - - 75
+    - Забайкальский край
+    - RU-ZAB
+    - 168
+  - - 76
+    - Ярославская область
+    - RU-YAR
+    - 168
+  - - 77
+    - Москва
+    - RU-MOW
+    - 168
+  - - 78
+    - Санкт-Петербург
+    - RU-SPE
+    - 168
+  - - 79
+    - Еврейская автономная область
+    - RU-YEV
+    - 168
+  - - 83
+    - Ненецкий автономный округ
+    - RU-NEN
+    - 168
+  - - 86
+    - Ханты-Мансийский автономный округ - Югра
+    - RU-KHM
+    - 168
+  - - 87
+    - Чукотский автономный округ
+    - RU-CHU
+    - 168
+  - - 89
+    - Ямало-Ненецкий автономный округ
+    - RU-YAN
+    - 168
+
+
+
+
+
+---
+spree_zone_members:
+  columns:
+  - id
+  - zoneable_id
+  - zoneable_type
+  - zone_id
+  - created_at
+  - updated_at
+  records: 
+  - - 764978542
+    - 168
+    - Spree::Country
+    - 1
+    - '2013-03-15 11:58:59.000000'
+    - '2013-03-15 11:58:59.000000'
+
+---
+spree_zones:
+  columns:
+  - id
+  - name
+  - description
+  - default_tax
+  - zone_members_count
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - РФ
+    - Российская Федерация
+    - false
+    - 1
+    - '2013-03-15 11:58:59.000000'
+    - '2013-03-15 11:58:59.000000'
+
+---
+spree_preferences:
+  columns:
+  - id
+  - value
+  - key
+  - value_type
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - '168'
+    - spree/app_configuration/default_country_id
+    - integer
+    - '2013-03-15 11:58:58.308871'
+    - '2013-10-15 13:01:27.641466'
+  - - 2
+    - RUB
+    - spree/app_configuration/currency
+    - string
+    - '2013-03-15 11:58:58.317783'
+    - '2013-10-15 13:01:27.886319'
+  - - 3
+    - '1'
+    - spree/address_book_configuration/disable_bill_address
+    - boolean
+    - '2013-03-15 11:58:58.332437'
+    - '2013-10-15 13:01:28.161400'
+  - - 4
+    - РФ
+    - spree/app_configuration/checkout_zone
+    - string
+    - '2013-03-15 11:59:15.100636'
+    - '2013-10-15 13:01:28.067100'
+  - - 5
+    - '5.0'
+    - spree/calculator/flat_rate/amount/909221584
+    - decimal
+    - '2013-03-15 11:59:27.599248'
+    - '2013-03-15 11:59:27.599248'
+  - - 6
+    - RUB
+    - spree/calculator/flat_rate/currency/909221584
+    - string
+    - '2013-03-15 11:59:27.602884'
+    - '2013-03-15 11:59:40.323215'
+  - - 7
+    - '5.0'
+    - spree/calculator/flat_rate/amount/144256889
+    - decimal
+    - '2013-03-15 11:59:27.608627'
+    - '2013-03-15 11:59:27.608627'
+  - - 8
+    - RUB
+    - spree/calculator/flat_rate/currency/144256889
+    - string
+    - '2013-03-15 11:59:27.612296'
+    - '2013-03-15 11:59:40.309107'
+  - - 9
+    - '15.0'
+    - spree/calculator/flat_rate/amount/273448578
+    - decimal
+    - '2013-03-15 11:59:27.618390'
+    - '2013-03-15 11:59:27.618390'
+  - - 10
+    - RUB
+    - spree/calculator/flat_rate/currency/273448578
+    - string
+    - '2013-03-15 11:59:27.622303'
+    - '2013-03-15 11:59:40.315829'
+  - - 11
+    - '10.0'
+    - spree/calculator/flat_rate/amount/319692212
+    - decimal
+    - '2013-03-15 11:59:27.627827'
+    - '2013-03-15 11:59:27.627827'
+  - - 12
+    - RUB
+    - spree/calculator/flat_rate/currency/319692212
+    - string
+    - '2013-03-15 11:59:27.632174'
+    - '2013-03-15 11:59:40.319804'
+  - - 13
+    - '65062'
+    - spree/dash_configuration/app_id
+    - string
+    - '2013-03-15 12:06:49.989420'
+    - '2013-03-15 12:06:49.989420'
+  - - 14
+    - f53eef13a823cc3b0911ea8330147035
+    - spree/dash_configuration/app_token
+    - string
+    - '2013-03-15 12:06:49.996466'
+    - '2013-03-15 12:06:49.996466'
+  - - 15
+    - '105171'
+    - spree/dash_configuration/site_id
+    - string
+    - '2013-03-15 12:06:50.001093'
+    - '2013-03-15 12:06:50.001093'
+  - - 16
+    - 702758f2cf73eefa1981fe3618fd96a6
+    - spree/dash_configuration/token
+    - string
+    - '2013-03-15 12:06:50.005175'
+    - '2013-03-15 12:06:50.005175'
+  - - 19
+    - '300.0'
+    - spree/calculator/flat_rate/amount/909221587
+    - decimal
+    - '2013-03-15 12:16:38.119362'
+    - '2013-03-15 12:16:38.119362'
+  - - 20
+    - RUB
+    - spree/calculator/flat_rate/currency/909221587
+    - string
+    - '2013-03-15 12:16:38.123268'
+    - '2013-03-15 12:16:38.123268'
+  - - 21
+    - '0.0'
+    - spree/calculator/flat_percent_item_total/flat_percent/909221588
+    - decimal
+    - '2013-03-15 15:16:42.894412'
+    - '2013-03-15 15:16:42.894412'
+  - - 22
+    - Spree Demo Site
+    - spree/app_configuration/site_name
+    - string
+    - '2013-03-18 10:32:15.014183'
+    - '2013-03-18 10:32:15.014183'
+  - - 23
+    - ''
+    - spree/app_configuration/default_seo_title
+    - string
+    - '2013-03-18 10:32:15.022730'
+    - '2013-03-18 10:32:15.022730'
+  - - 24
+    - spree, demo
+    - spree/app_configuration/default_meta_keywords
+    - string
+    - '2013-03-18 10:32:15.026781'
+    - '2013-03-18 10:32:15.026781'
+  - - 25
+    - Spree demo site
+    - spree/app_configuration/default_meta_description
+    - string
+    - '2013-03-18 10:32:15.029617'
+    - '2013-03-18 10:32:15.029617'
+  - - 26
+    - demo.spreecommerce.com
+    - spree/app_configuration/site_url
+    - string
+    - '2013-03-18 10:32:15.032457'
+    - '2013-03-18 10:32:15.032457'
+  - - 27
+    - '0'
+    - spree/app_configuration/allow_ssl_in_production
+    - boolean
+    - '2013-03-18 10:32:15.035153'
+    - '2013-10-15 13:01:21.598379'
+  - - 28
+    - t
+    - spree/app_configuration/allow_ssl_in_staging
+    - boolean
+    - '2013-03-18 10:32:15.037848'
+    - '2013-03-18 10:32:15.037848'
+  - - 29
+    - '0'
+    - spree/app_configuration/allow_ssl_in_development_and_test
+    - boolean
+    - '2013-03-18 10:32:15.040433'
+    - '2013-10-15 13:01:22.139351'
+  - - 30
+    - t
+    - spree/app_configuration/check_for_spree_alerts
+    - boolean
+    - '2013-03-18 10:32:15.043347'
+    - '2013-03-18 10:32:15.043347'
+  - - 31
+    - f
+    - spree/app_configuration/display_currency
+    - boolean
+    - '2013-03-18 10:32:15.046627'
+    - '2013-03-18 10:32:15.046627'
+  - - 32
+    - f
+    - spree/app_configuration/hide_cents
+    - boolean
+    - '2013-03-18 10:32:15.049538'
+    - '2013-03-18 10:32:15.049538'
+
+
+
+
+

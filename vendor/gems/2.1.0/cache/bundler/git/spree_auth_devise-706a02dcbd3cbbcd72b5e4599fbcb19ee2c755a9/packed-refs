@@ -1,0 +1,11 @@
+# pack-refs with: peeled 
+da5fc27809ccf8c0a45ef30e13c7dc8600cdced6 refs/heads/split_core
+c27fac85b0827e5d39b080d646eeeccbfec85e4b refs/heads/rails4
+f97fe6659f8dace90870f87aa4130bd8fdff177f refs/heads/master
+ffa61c63dcf3c9cbea23e7554d98026f326e62a3 refs/heads/i18n
+a85a9cb56fe11e628ce8ec20353e5438317f39de refs/heads/edge
+6469c80cbb8f7bd09fe302c2d0e7fdcb187e38de refs/heads/2-2-stable
+f6f91480655b8bd0179ba29a7fef917e8d20e101 refs/heads/2-1-stable
+3224869cfda188f8d7fc4f1eb630d862cd585bea refs/heads/2-0-stable
+0be544ef895d38b0b07ba6ba12284bfa1c23bba4 refs/heads/1-3-stable
+3e0ebc3ebf6efec428d21eb21a3e8811984c248e refs/heads/1-2-stable
