@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140701163321) do
+ActiveRecord::Schema.define(version: 20141014125438) do
 
   create_table "images", force: true do |t|
     t.string   "content"
@@ -935,6 +935,13 @@ ActiveRecord::Schema.define(version: 20140701163321) do
     t.string   "description"
     t.boolean  "default_tax",        default: false
     t.integer  "zone_members_count", default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "syncs", force: true do |t|
+    t.integer  "quantity"
+    t.string   "variant"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
